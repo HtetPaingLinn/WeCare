@@ -1,0 +1,27 @@
+.next-period { background-color: #CCE8FF; }
+.fertile-window { background-color: #BAF2DC; }
+.ovulation-day { background-color: #FFC9C9; }
+.pregnancy-test-day { background-color: #FEE3A3; }
+.selected-date { background-color: #4C51BF; color: white; }
+.tooltip {
+  position: absolute;
+  padding: 8px 12px;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  border-radius: 8px;
+  font-size: 14px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 10;
+  transition: opacity 0.3s ease;
+}
+.tooltip::before {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: transparent transparent rgba(0, 0, 0, 0.85) transparent;
+}
